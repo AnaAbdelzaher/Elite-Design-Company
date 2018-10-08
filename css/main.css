@@ -1,0 +1,619 @@
+/*
+The main style of Design by Abdelzaher
+First color is #08526d
+Second Color is #ec1c23
+*/
+
+/********************* Start The Upper Bar *************************/
+.upper-bar {
+  background-color: #08526d;
+  color: #fff;
+  
+}
+.upper-bar .info{
+margin: 15px 0;
+}
+@media (max-width:576px){
+  .upper-bar .info{
+    margin-bottom:0;
+  }
+  
+}
+.upper-bar span {
+  color: #bfc6c9;
+}
+
+.upper-bar .get-quote {
+  display: inline-block;
+  border: 1px solid #ec1c23;
+  padding: 2px 10px;
+  margin-left: 20px;
+}
+@media (max-width:576px){
+  .upper-bar .get-quote{
+    border: none;
+    margin-left: 5px;
+  }
+  
+}
+
+/********************  End The Upper Bar    ***********************/
+/******************** Starting Style of  The NavBar    ***********************/
+.navbar-brand>span {
+  font-size: 40px;
+}
+
+.navbar-brand span:first-child {
+  color: #08526d;
+  font-weight: bold;
+}
+
+.navbar-brand span:last-child {
+  color: #ec1c23;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-left: 20px;
+  color: #08526d;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #ec1c23;
+}
+
+/********************  Ending Style of  The NavBar     ***********************/
+/********************  Starting Style of  The Slider Bar     ***********************/
+.slider .carousel-inner {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+@media(max-width:768px){
+  .slider .carousel-inner{
+    justify-content: center;
+  }
+}
+
+.slider .carousel-inner h1 {
+  z-index: 3;
+  font-size: 68px;
+  color: #fff;
+  position: absolute;
+  max-width: 900px;
+  line-height: 1.5;
+  left: 100px;
+}
+@media(max-width:768px){
+  .slider .carousel-inner h1{
+    
+    font-size: 40px;
+    text-align: center;
+    max-width: 100%;
+    left: auto;
+  }
+}
+.slider .carousel-inner h1 span {
+  background-color: #ec1c23;
+  display: inline-block;
+}
+
+.slider .carousel-inner .overlay {
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  height: 100%;
+  width: 100%;
+}
+
+.slider .carousel-item {
+  background-size: cover;
+}
+
+.slider .carousel-one {
+  background-image: url('../img/slider01.jpg');
+}
+
+.slider .carousel-two {
+  background-image: url('../img/slider02.jpeg');
+}
+
+.slider .carousel-three {
+  background-image: url('../img/slider03.jpeg');
+}
+
+.slider .carousel-indicators li {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%
+}
+
+/********************  Ending Style of  The Slider Bar     ***********************/
+/********************  Starting Style of  The Feature Section   **************************/
+.features {
+  padding: 50px 0;
+}
+
+.features i {
+  background-color: #ec1c23;
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.features h3 {
+  color: #08526d;
+  font-size: 22px;
+}
+
+.features p {
+  color: #989898;
+  margin-bottom: 40px;
+}
+
+/********************  Ending Style of  The Feature Section     **************************/
+/********************  Staring Style of  overview Section     **************************/
+.overview {
+  padding: 100px;
+  background-color: #F0f5f7;
+}
+
+.overview h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}
+@media(max-width:992px){
+  .overview h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  
+  }
+}
+.overview p {
+  line-height: 2;
+  margin: 0 auto 15px;
+  color: #6a6a6a;
+  width: 65%;
+
+}
+@media(max-width:992px){
+  .overview p {
+    
+    width: 100%;
+  
+  }
+}
+.overview h4 {
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #8b8a8a;
+}
+
+.overview button {
+  color: #fff;
+  background-color: #ed1d24;
+  padding: 10px 40px;
+  /* font-weight: bold; */
+  font-size: 23px;
+  border: 1px solid #ed1d24;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/********************  Ending Style of  The overview Section     **************************/
+/********************  Starting Style of  The Previous work Section     **************************/
+.featured-work {
+  padding: 100px 0;
+}
+
+.featured-work h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}
+
+.featured-work p {
+  line-height: 1.6;
+  margin: 0 auto 15px;
+  color: #6a6a6a;
+  width: 65%;
+
+}
+
+.featured-work ul {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.featured-work ul li {
+  color: #08526d;
+  border: 2px solid #08526d;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: all .3s ease-in-out;
+
+}
+
+.featured-work ul li.active,
+.featured-work ul li:hover {
+  background-color: #ec1c23;
+  border: 2px solid #ec1c23;
+  color: #fff;
+}
+
+.featured-work ul li:hover {
+  cursor: pointer;
+}
+
+
+.featured-work .shuffle-images .row {
+  margin: 0
+}
+
+.featured-work .shuffle-images .row .col-md {
+  padding: 0
+}
+
+.featured-work .shuffle-images .row .col-md img {
+  width: 100%;
+}
+
+/********************  Ending Style of  The Previous Section     **************************/
+/********************  Starting Style of  The Latest Post Section     **************************/
+.latest-posts {
+  padding: 0 0 100px 0;
+}
+
+.latest-posts h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}
+
+.latest-posts .intro-p {
+  line-height: 1.6;
+  margin: 0 auto 15px;
+  color: #6a6a6a;
+  width: 65%;
+
+}
+
+.latest-posts .card {
+  margin-bottom: 30px;
+}
+
+.latest-posts .card .card-title {
+  color: #08526d;
+  font-size: 20px;
+  line-height: 1.5
+}
+
+.latest-posts .card .card-text {
+  color: #989898;
+  margin-bottom: 10px;
+}
+
+.latest-posts .card .card-link {
+  color: #ec1c23;
+  font-weight: bold;
+}
+
+/********************  Ending Style of  The Latest Post Section     **************************/
+/********************  Starting Style of  The Testemonial Section     **************************/
+.testimonials{
+  background-size: cover;
+  background-image: url('../img/testimonial-bg.jpg');
+  position: relative;
+}
+
+
+
+.testimonials .overlay {
+   
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  height: 100%;
+  width: 100%;
+}
+.testimonials .container{
+  z-index: 5;
+  position: relative;
+}
+.testimonials .carousel-caption{
+  top: 50%;
+  margin-top: -158px;
+}
+.testimonials .carousel-caption img{
+  margin-bottom:20px;
+}
+.testimonials .carousel-caption h5{
+  margin-bottom:5px ;
+  
+}
+.testimonials .carousel-caption h5 +span{
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom:30px ;
+
+}
+.testimonials .carousel-indicators li {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%
+}
+
+/********************  Ending Style of  The Testemonial Section     **************************/
+/********************  Starting Style of  The Pricing Section     **************************/
+.pricing {
+  padding: 100px 0 100px ;
+  background-color: #f7f7f7;
+}
+
+.pricing h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}
+
+.pricing .intro-p {
+  line-height: 1.6;
+  margin: 0 auto 85px;
+  color: #6a6a6a;
+  width: 65%;
+
+}
+@media (max-width:992px){
+  .pricing .intro-p {
+    width: 100%;
+    margin: 0 auto 40px;
+  
+  }
+
+}
+
+.pricing .card {
+  margin-bottom: 30px;
+}
+.pricing .card .card-body{
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.pricing .card .card-title {
+  color: #08526d;
+  font-size: 20px;
+  line-height: 1.5;
+  font-size:25px;
+  margin-top: 40px;
+}
+
+.pricing .card .card-text {
+  color: #08526d;
+  margin-bottom: 5px;
+  margin: 30px 0 10px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.pricing .card .card-text span{
+  text-transform: uppercase;
+  font-size: 14px;              
+}
+.pricing .list-group-item{
+  border: none;
+}
+.pricing .card .card-link {
+  background-color: #ed1d24;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.pricing  .corporate{
+  top:-20px; 
+  position: relative;
+}
+.pricing  .corporate .card-text{
+   background-color: #ed1d24;
+   color: #fff;
+}
+.pricing  .corporate .card-link{
+  background-color: #08526d;
+}
+/********************  Ending Style of  The Pricing Section     **************************/
+/**********************  starting The why choose us  Section         **************************/
+.choose img {
+  max-width: 100%
+}
+
+.choose .info{
+  padding: 0;
+}
+.choose .info:last-child{
+  background-color: #08526d;
+  color:#fff;
+  padding-top:30px;
+}
+.choose h2{
+  margin:35px;
+}
+.choose p{
+  margin: 35px;
+  font-size:18px;
+  line-height: 1.6;
+}
+.choose .readMore{
+  display: inline-block;
+  margin: 0 0 0 40px;
+  color: #fff;
+  background-color: #ec1c23;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-weight: bold;
+
+}
+/**********************  Ending The why choose us  Section         **************************/
+/**********************  starting The statistics  Section         **************************/
+.stats{
+  color:#08526d;
+  padding: 100px 0;
+}
+.stats .stats-box{
+  margin-bottom: 40px;
+}
+.stats .num-span{
+  display: block;
+  font-size:50px ;
+  font-weight: bold;
+}
+.stats p{
+  font-size:20px ;
+  color: #ed1d24;
+  font-style: italic;
+  margin: 0;
+}
+/**********************  Ending The statistics  Section         **************************/
+/**********************  start The contact  Section         **************************/
+.contact-us{
+  background-color: #ed1d24;
+  padding: 50px 0;
+  color: #fff;
+  font-size: 22px;
+}
+.contact-us p{
+  margin: 0;
+}
+@media(max-width:786px){
+  .contact-us p{
+    margin-bottom: 30px;
+  }
+
+}
+.contact-us a{
+  color:#fff;
+  text-transform: uppercase;
+  padding: 6px 15px 8px;
+  border:2px solid #fff;
+  font-weight: bold;
+}
+
+/**********************  Ending The contact  Section         **************************/
+/**********************  start The footer  Section           **************************/
+.footer{
+  padding: 100px 0;
+}
+.footer .site-info h2{
+  font-size: 50px;
+
+}
+
+.footer .site-info h2 span:first-child{
+  color:#08526d;
+  font-weight: bold;
+
+}
+.footer .site-info h2 span:last-child{
+  color:#ec1c23;
+}
+.footer .site-info p{
+  line-height: 1.8;
+  color: #727272;
+}
+.footer .site-info a{
+  color: #08526d;
+  font-size:15px ;
+  font-weight:bold ;
+}
+/* .footer .site-info a:before{
+  font-family:'FontAwesome' ;
+  content:'\f138';
+  
+  display: inline-block;
+  margin-right: 5px;
+} */
+
+.footer .helpful-link h2,
+.footer .contact h2{
+  font-size: 22px;
+  color: #08526d;
+  margin-bottom:40px;
+}
+.footer .helpful-link .fa-ul {
+ margin:0;
+} 
+.footer .helpful-link .fa-ul .fa-li {
+  left: -10px;
+}
+.footer .helpful-link .fa-ul .fa-li i{
+  margin-top: 5px;
+}
+@media(max-width:576px){
+  .footer .helpful-link .fa-ul .fa-li i{
+    margin-left: 5px;
+  }
+}
+
+ /* .footer .helpful-link ul li:before{
+  content:'\f054';
+  font-family:'FontAwesome' ;
+  margin-right: 5px;
+  color:#08526d;
+  font-size: 12px;
+  position: relative;
+  top:-1;
+}  */
+.footer .contact ul li{
+  margin-bottom: 20px;
+}
+@media(max-width:992px){
+  .footer .helpful-link h2,
+  .footer .contact h2{
+    margin-top: 20px;
+    margin-bottom:20px;
+  }
+  .footer .contact ul li{
+    margin-bottom:5px;
+  }
+
+}
+/**********************  Ending The footer  Section          **************************/
+/**********************  start The copyright  Section        **************************/
+.copyright{
+  border-top:1px solid #c0c0c0;
+  padding: 20px;
+}
+.copyright ul{
+  margin:0;
+}
+.copyright ul li{
+  display:inline-block;
+}
+.copyright ul li a{
+  color:#777;
+  font-size: 16px;
+  margin-left: 20px;
+  display: inline-block;
+
+}
+/**********************  Ending The copyright  Section         **************************/
